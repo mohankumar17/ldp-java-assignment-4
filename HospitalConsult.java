@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class HospitalConsult {
     public void printDateRange(String signDate, String currDate){
-        int ddS=Integer.parseInt(signDate.substring(0,2));
-        int mmS=Integer.parseInt(signDate.substring(3,5));
+        int ddS = Integer.parseInt(signDate.substring(0,2));
+        int mmS = Integer.parseInt(signDate.substring(3,5));
         int yyyyS=Integer.parseInt(signDate.substring(6,10));
 
         int ddC=Integer.parseInt(currDate.substring(0,2));
@@ -13,7 +13,7 @@ public class HospitalConsult {
         int yyyyC=Integer.parseInt(currDate.substring(6,10));
 
         //System.out.println(ddC+"/"+mmC+"/"+yyyyC);
-        String startDate,endDate;
+        String startDate, endDate;
         if(yyyyC==yyyyS){
             System.out.println("No Range");
         }
